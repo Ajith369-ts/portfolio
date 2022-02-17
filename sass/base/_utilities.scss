@@ -1,0 +1,95 @@
+.heading-primary {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-size: 7.2rem;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+        font-size: 6.5rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 6rem;
+    }
+}
+
+.heading-secondary,
+.bracket {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.numbered-heading {
+    .heading-secondary {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 0.02rem;
+    }
+}
+
+.quotes {
+    position: relative;
+    padding: 0 2rem;
+
+    &::before,
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        color: var(--bs-primary);
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 900;
+        position: absolute;
+    }
+
+    &::before {
+        content: "\f10d";
+        top: -0.4rem;
+        left: -1rem;
+    }
+
+    &::after {
+        content: "\f10e";
+        bottom: 0;
+        right: 1rem;
+    }
+}
+
+.border-line {
+    &::after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1px;
+        margin-left: 1.5rem;
+        background-color: var(--bs-primary);
+        opacity: 0.5;
+    }
+}
+
+.tools-icon {
+    .language-icon {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    figcaption {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}
+
+.block-line {
+    display: inline-block;
+    width: 4rem;
+    height: 0.2rem;
+    margin-bottom: 0.4rem;
+    background: var(--bs-primary);
+}

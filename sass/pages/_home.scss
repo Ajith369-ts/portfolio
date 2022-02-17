@@ -1,0 +1,40 @@
+.section {
+    transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+    opacity: 0;
+    transform: translateY(12.5rem);
+}
+
+.section-intro {
+    padding: 12rem 0 8rem;
+
+    @media (max-width: 768px) {
+        & {
+            padding: 6rem 0;
+        }
+    }
+}
+
+.section-about {
+    &__content {
+        padding: 5rem;
+
+        @media (max-width: 768px) {
+            & {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.section-service {
+    padding: 6rem 0 8rem;
+}
+
+.section-contact {
+    &__content {
+        padding: 2rem;
+    }
+}

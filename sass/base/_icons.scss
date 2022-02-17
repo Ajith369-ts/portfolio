@@ -1,0 +1,32 @@
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+
+    li {
+        transform: scale(1);
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.4);
+
+            .social-media__icon {
+                fill: var(--bs-primary);
+            }
+        }
+    }
+
+    &__link {
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    &__icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: var(--bs-white);
+    }
+}

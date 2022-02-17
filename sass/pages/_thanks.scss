@@ -1,0 +1,17 @@
+.thanks {
+    height: 100vh;
+    padding: 1.6rem;
+
+    &__container {
+        border-radius: 1.5rem;
+        padding: 4.5rem;
+        text-align: center;
+
+        animation: moveInBottom 0.8s ease-out 0.2s;
+    }
+
+    .mail-letter {
+        width: 15rem;
+        height: 15rem;
+    }
+}

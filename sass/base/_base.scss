@@ -1,0 +1,26 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @media (max-width: 768px) {
+        font-size: 60.5%;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 58%;
+    }
+}
+
+body {
+    background-color: var(--bs-dark);
+}
+
+/* IMAGE BLUR */
+
+img {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+}

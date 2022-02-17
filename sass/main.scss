@@ -1,0 +1,21 @@
+@import "./custom";
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animation";
+@import "./base/utilities";
+@import "./base/icons";
+
+@import "./components/hero";
+@import "./components/background_dots";
+@import "./components/about";
+@import "./components/button";
+@import "./components/card";
+@import "./components/form";
+@import "./components/_project.scss";
+@import "./components/social";
+
+@import "./layout/header";
+
+@import "./pages/home";
+@import "./pages/thanks";
